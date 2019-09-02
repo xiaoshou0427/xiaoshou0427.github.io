@@ -17,7 +17,7 @@ PJAX: true #启用PJAX，会与评论系统冲突（如不用评论系统建议�
 paginate: 8 #同时显示的最大文章数，超过自动分页
 paginate_path: "page:num"
 
-background: https://xiaoshou0427.github.io/avatar/it.png #https://api.dujin.org/bing/1920.php
+background: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419186441&di=4b8c7701a2dfaffdb3b0cef558853bcb&imgtype=0&src=http%3A%2F%2Fimg.linux.net.cn%2Fdata%2Fattachment%2Falbum%2F201403%2F31%2F225508grrmlixld6sjrlgu.png #https://api.dujin.org/bing/1920.php
 theme_color: 546E7A
 
 google_analytics:
