@@ -1,36 +1,109 @@
-# Webcomic Jekyll Theme
-A simple webcomic theme for Jekyll, a static site generator. Built using Bootstrap.
+# The Hacker-Blog theme
 
-This theme is meant to offer a free and relatively easy webcomic hosting solution for artists with little or no coding experience. [Here's the user guide for this theme](https://peahatlanding.github.io/Webcomic-Jekyll-Theme/). 
+*Hacker-Blog is a minimalistic, responsive jekyll theme built for hackers. It is based on the [hacker theme](https://github.com/pages-themes/hacker) for project pages.*
 
+Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker-blog)
 
-# Using This Theme
+### Included
 
-## STEP ONE: Install Jekyll
-To use this theme, you'll need to install Jekyll. The easiest way to install Jekyll is to using RubyGems.
-[Ruby Installation Guide.](https://rubygems.org/pages/download)
+1. Pagination
+2. SEO tags
+3. Archive Page
+4. RSS
+5. Sitemap 
 
-Once you have Ruby installed, you can simply open up your Terminal and type
+## Usage
 
+1. Fork and Clone this repository
+2. Customize your blog
+3. Add a new post in `_posts/` directory with proper name format (as shown in placeholder posts)
+4. Commit and push to master 
+
+## Local Build
+
+If you want to see the changes before pushing the blog to Github, do a local build.
+
+1. [`gem install jekyll`](https://jekyllrb.com/docs/installation/#install-with-rubygems)
+2. `gem install jekyll-seo-tag`
+3. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
+4. Go to `http://0.0.0.0:8000/` in your web browser.
+
+*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+
+### Local build using docker
+
+```bash
+docker run --rm -p 8000:8000 \
+  --volume="LOCATION_OF_YOUR_JEKYLL_BLOG:/srv/jekyll" \
+  -it tocttou/jekyll:3.5 \
+  jekyll serve --watch --port 8000
 ```
-gem install jekyll
+
+Replace `LOCATION_OF_YOUR_JEKYLL_BLOG` with the full path of your blog repository. Visit `http://localhost:8000/` to access the blog.
+
+*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+
+## Customizing
+
+### Configuration variables
+
+Edit the `_config.yml` file and set the following variables:
+
+```yml
+title: [The title of your blog]
+description: [A short description of your blog's purpose]
+author:
+  name: [Your name]
+  email: [Your email address]
+  url: [URL of your website]
+
+baseurl: [The base url for this blog.]
+
+paginate: [Number of posts in one paginated section (default: 3)]
+owner: [Your name]
+year: [Current Year]
 ```
 
-Here's the [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/) if you need more info.
+*Note: All links in the site are prepended with `baseurl`. Default `baseurl` is `/`. Any other baseurl can be setup like `baseurl: /hacker-blog`, which makes the site available at `http://domain.name/hacker-blog`.*
 
+Additionally, you may choose to set the following optional variables:
 
-# STEP TWO: Download the Webcomic Code
+```yml
+google_analytics: [Your Google Analytics tracking ID]
+```
 
-1. Download this directory.
-2. Use Terminal to navigate to where you’ve saved the directory. Type `jekyll serve` into Terminal.
-3. If everything’s in the right place, Jekyll will serve the webcomic site to your local server! Paste `http://127.0.0.1:4000` into a browser to see it!
+### About Page
 
-# STEP FOUR: Add your content!
+Edit `about.md`
 
-[Read about using the code here](https://peahatlanding.github.io/Webcomic-Jekyll-Theme/howto.html).
+### Layout
 
-## Pushing to Github Pages
+If you would like to modify the site style:
 
-Github has a fantastic guide for creating a Github Page and pushing your code to live.
-[Github Pages Guide](https://pages.github.com/)
-I won't waste your time trying to duplicate it. When you're finished building your site, go ahead and try it!
+**HTML**
+
+Footer: Edit `_includes/footer.html`
+
+Header: Edit `_includes/header.html`
+
+Links in the header: Edit `_includes/links.html`
+
+Meta tags, blog title display, and additional CSS: Edit `_includes/head.html`
+
+Index page layout: Edit `_layouts/default.html`
+
+Post layout: Edit `_layouts/post.html`
+
+**CSS**
+
+Site wide CSS: Edit `_sass/base.scss`
+
+Custom CSS: Make `_sass/custom.scss` and use it. Then add `@import "custom";` to `css/main.scss`
+
+**404 page**
+
+Edit `404.md`
+
+## License
+
+CC0 1.0 Universal
