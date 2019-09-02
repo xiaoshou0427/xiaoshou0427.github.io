@@ -10,7 +10,7 @@ permalink: /about.html
 
 你可以通过以下方式联系作者
 
-QQ: 1316341442
+<!-- QQ: xxxxx
 
 Email: <a href="mailto:lk@atlinker.cn">lk@atlinker.cn</a>
 
@@ -24,4 +24,4 @@ Github: [link9596](https://github.com/link9596)
 
 ![wechat](https://atlinker.cn/pay/wechat.png)
 
-![pay](https://atlinker.cn/pay/apay.png)
+![pay](https://atlinker.cn/pay/apay.png) -->
