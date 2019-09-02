@@ -17,7 +17,7 @@ PJAX: true #启用PJAX，会与评论系统冲突（如不用评论系统建议�
 paginate: 8 #同时显示的最大文章数，超过自动分页
 paginate_path: "page:num"
 
-background: https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=1280%2A1024%E5%A3%81%E7%BA%B8&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&hd=undefined&latest=undefined&copyright=undefined&cs=3187454936,3664625819&os=7876048,224166029&simid=4210561917,678187547&pn=90&rn=1&di=99220&ln=652&fr=&fmq=1567409745221_R&fm=rs3&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=3c&oriquery=%E9%A3%8E%E6%99%AF%201024&objurl=http%3A%2F%2Fpic38.nipic.com%2F20140219%2F6608733_095253164000_2.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined #https://api.dujin.org/bing/1920.php
+background: http://pic22.nipic.com/20120721/9782298_204803545000_2.jpg #https://api.dujin.org/bing/1920.php
 theme_color: 546E7A
 
 google_analytics:
