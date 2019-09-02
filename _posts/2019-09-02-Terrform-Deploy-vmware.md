@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terrform deploy vm on vmware
+title: Terrform deploy vmware virtual machine.
 tags: Terrform
 stickie: true
 ---
