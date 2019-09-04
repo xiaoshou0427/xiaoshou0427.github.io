@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Billboard
+title: 人生格言
 tagline: Biu~
 ---
 
