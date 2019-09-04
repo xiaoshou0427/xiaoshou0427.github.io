@@ -3,7 +3,7 @@ layout: page
 title: About
 tagline: 关于我 ~
 sitetime: display
-permalink: /about.html
+permalink: /About.html
 ---
 
 ## #作者
